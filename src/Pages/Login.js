@@ -5,7 +5,11 @@ const Login = () =>{
     return(
         <div>
             <Header/>
-            This is login page.
+            <div className='login-base'>
+                <div classname='login-main'>
+                    
+                </div>
+            </div>
         </div>
     );
 }

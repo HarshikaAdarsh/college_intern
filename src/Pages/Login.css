@@ -1,0 +1,26 @@
+.login-base{
+    background-color:skyblue;
+    padding:100px 0;
+}
+.login-main{
+    width:50%;
+    border:3px solid black;
+    margin:auto;
+    padding:20px;
+    border-radius:7px;
+    text-align: center;
+}
+.login-heading{
+
+}
+.login-input{
+    display: ;
+    width: 80%;
+    font-size:30px;
+    padding-bottom: ;
+}
+login
+.login-button{
+    font-size:33px;
+
+}
