@@ -4,7 +4,7 @@ import{useState} from 'react';
 
 const Login = () =>{
     let[username,setUsername]=useState("");
-    let[username,setUsername]=useState("");
+    let[password,setPassword]=useState("");
     function showData(){
         alert(username);
         alert(password);
