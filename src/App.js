@@ -1,6 +1,44 @@
 import logo from './logo.svg';
-import './App.css';
+import Home from "./Home";
+import { Route,Routes } from "react-router-dom";
+import Loign from "./Pages/Login.js";
+import Signup from "./Pages/Signup";
 
+const App = () =>{
+  let data = [
+      {
+          name:"User Singh",
+          email:"user@gmail.com",
+          contact:909090909,
+          city:"Lucknow"
+      },
+      {
+          name:"Aman Singh",
+          email:"aman@gmail.com",
+          contact:909000099,
+          city:"Kanpur"
+      },
+      {
+          name:"Asif",
+          email:"asif@gmail.com",
+          contact:909888888,
+          city:"Delhi"
+      }
+  ];
+
+  return(
+      <>
+          <Routes>
+              <Route path="/" element={ <Home user={data} /> } />
+              <Route path="/login" element={ <Loign /> } />
+              <Route path="/signup" element={ <Signup /> } />
+          </Routes>
+          
+      </>
+  );
+}
+
+{/*}
 function App() {
   return (
     {/*
@@ -19,7 +57,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>*/}
+    </div>
     <>
     <Routes>
       <Route path="/" element={<Home user={data}/>}/>
@@ -29,6 +67,6 @@ function App() {
     
     </>
   );
-}
+}*/}
 
 export default App;
